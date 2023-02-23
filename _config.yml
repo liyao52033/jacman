@@ -7,13 +7,16 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author:liyao
+author: liyao
 language: zh-CN
 timezone: ''
 
+stylus:
+  compress: true
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://liyao52033.github.io/jacman/
+url: http://139.196.86.95:8181/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -26,6 +29,7 @@ public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
+about_dir: about
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -97,12 +101,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: jacman
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/liyao52033/jacman.git
+  repo: git@139.196.86.95:/usr/local/hexoblog/.git
   branch: main
-  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}
